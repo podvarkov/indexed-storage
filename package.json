@@ -1,0 +1,26 @@
+{
+  "name": "indexed-storage",
+  "version": "1.0.2",
+  "description": "Simple implementation of local storage with indexedDB",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/index.js --out-dir dist"
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "dexie": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+  },
+  "dependencies": {
+    "dexie": "^2.0.4"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
