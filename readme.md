@@ -40,7 +40,7 @@ store.clearAll();                  // clears *ALL* areas (but still namespace se
 import store from 'indexed-storage'
 
 // set value
-store('foo', {foo: "bar"})
+store('foo', {bar: "baz"})
   .then(key => console.log(key)) // "foo"
 
 // get value
