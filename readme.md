@@ -4,7 +4,7 @@ Simple implementation of local storage with indexedDB
 
 [npm]: https://www.npmjs.com/package/indexed-storage
 
-![npm version](https://badge.fury.io/js/indexed-storage.svg)
+[![npm version](https://badge.fury.io/js/indexed-storage.svg)](https://badge.fury.io/js/indexed-storage)
   
 ## Documentation
 The main store function: 
@@ -34,7 +34,7 @@ store.clearAll();                  // clears *ALL* areas (but still namespace se
 
 > All functions are async :rocket: and return Promise
 
-##Examples
+## Examples
 ```javascript
 import store from 'indexed-storage'
 
