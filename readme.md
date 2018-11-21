@@ -1,8 +1,9 @@
 Simple implementation of local storage with indexedDB
 
-[NPM][npm]: `npm install indexed-storage`  
-
-[npm]: https://www.npmjs.com/package/indexed-storage
+```
+npm install indexed-storage
+yarn add indexed-storage
+```
 
 [![npm version](https://badge.fury.io/js/indexed-storage.svg)](https://badge.fury.io/js/indexed-storage)
   
