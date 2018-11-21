@@ -4,12 +4,26 @@
   "description": "Simple implementation of local storage with indexedDB",
   "main": "dist/index.js",
   "module": "src/index.js",
+  "author": "Maksim Podvarkov <i.snova.bebebe@gmail.com>",
+  "homepage": "https://github.com/podvarkov/indexed-storage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/podvarkov/indexed-storage"
+  },
+  "keywords": [
+    "index db",
+    "indexDb",
+    "localStorage",
+    "sessionStorage",
+    "webStorage",
+    "storage"
+  ],
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src/index.js --out-dir dist"
   },
-  "author": "",
-  "license": "MIT",
   "peerDependencies": {
     "dexie": "^2.0.4"
   },
@@ -17,7 +31,7 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/plugin-transform-async-to-generator": "^7.1.0",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-env": "^7.1.6"
   },
   "dependencies": {
     "dexie": "^2.0.4"
