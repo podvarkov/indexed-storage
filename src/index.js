@@ -54,18 +54,20 @@ export const store = async (key, value) => {
   if (typeof key === "object") {
     return storeFromObject(key)
   }
-  if (typeof key === "boolean" && key === false && !value) {
+  if (key === false) {
     return clearAll()
   }
-  if (!key && !value) {
+  if (typeof key === "undefined") {
     return getAll()
   }
-  if (key && typeof key !== "boolean" && !value) {
+  if (typeof key !== "boolean" && typeof key !== "undefined" && typeof value === "undefined") {
     return getByKey(key)
   }
-  if (key && value) {
+  if (typeof key !== "boolean" && typeof value !== "undefined") {
     return storeByKey(key, value)
   }
+
+  return Promise.resolve(undefined)
 }
 
 store.set = storeByKey
@@ -76,5 +78,6 @@ store.clear = clearAll
 store.remove = removeByKey
 store.has = hasKey
 store.size = size
+store.add =add
 
 export default store

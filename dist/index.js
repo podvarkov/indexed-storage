@@ -343,7 +343,7 @@ function () {
             return _context10.abrupt("return", storeFromObject(key));
 
           case 2:
-            if (!(typeof key === "boolean" && key === false && !value)) {
+            if (!(key === false)) {
               _context10.next = 4;
               break;
             }
@@ -351,7 +351,7 @@ function () {
             return _context10.abrupt("return", clearAll());
 
           case 4:
-            if (!(!key && !value)) {
+            if (!(typeof key === "undefined")) {
               _context10.next = 6;
               break;
             }
@@ -359,7 +359,7 @@ function () {
             return _context10.abrupt("return", getAll());
 
           case 6:
-            if (!(key && typeof key !== "boolean" && !value)) {
+            if (!(typeof key !== "boolean" && typeof key !== "undefined" && typeof value === "undefined")) {
               _context10.next = 8;
               break;
             }
@@ -367,7 +367,7 @@ function () {
             return _context10.abrupt("return", getByKey(key));
 
           case 8:
-            if (!(key && value)) {
+            if (!(typeof key !== "boolean" && typeof value !== "undefined")) {
               _context10.next = 10;
               break;
             }
@@ -375,6 +375,9 @@ function () {
             return _context10.abrupt("return", storeByKey(key, value));
 
           case 10:
+            return _context10.abrupt("return", Promise.resolve(undefined));
+
+          case 11:
           case "end":
             return _context10.stop();
         }
@@ -385,8 +388,7 @@ function () {
   return function store(_x9, _x10) {
     return _ref12.apply(this, arguments);
   };
-}(); //
-
+}();
 
 exports.store = store;
 store.set = storeByKey;
@@ -397,5 +399,6 @@ store.clear = clearAll;
 store.remove = removeByKey;
 store.has = hasKey;
 store.size = size;
+store.add = add;
 var _default = store;
 exports.default = _default;
