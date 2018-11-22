@@ -1,6 +1,6 @@
 {
   "name": "indexed-storage",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple implementation of local storage with indexedDB",
   "main": "dist/index.js",
   "module": "src/index.js",
